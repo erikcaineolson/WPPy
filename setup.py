@@ -7,9 +7,9 @@ setup(name='wppy',
       author='Erik C. Olson',
       author_email='erikcaineolson@gmail.com',
       license='MIT',
-      packages=['wppy'],
-      install_requires=[
-          'mysql-connector',
-          'python-dotenv',
-      ],
-      zip_safe=False)
+      packages=find_packages(),
+      classifiers=[
+          "Programming Language :: Python :: 3",
+          "License :: OSI Approved :: MIT License",
+          "Operating System :: OS Independent",
+      ], )
