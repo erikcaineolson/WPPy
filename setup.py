@@ -2,8 +2,8 @@ from setuptools import setup, find_packages
 
 setup(name='whippy',
       version='0.8',
-      description='Python script for rapidly generating WordPress sites on Linux NGINX servers from the command line.'\
-                  'Totally unrelated to the wppy project, although they fill the same hole.',
+      description='Rapidly scaffold WordPress sites on Linux NGINX servers from the command line. Unrelated to the wppy'\
+                  ' project, although both fill the same hole.',
       url='https://github.com/erikcaineolson/whippy',
       author='Erik C. Olson',
       author_email='erikcaineolson@gmail.com',

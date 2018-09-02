@@ -6,7 +6,7 @@ import tarfile
 import urllib.request
 
 
-class WPPy:
+class Whippy:
     unwanted_characters = re.compile('(\W+)|(_+)')
 
     def __init__(self, use_defaults):
@@ -43,7 +43,7 @@ class WPPy:
 
     @staticmethod
     def format_directory(directory_name):
-        return WPPy.unwanted_characters.sub('-', directory_name).lower()
+        return Whippy.unwanted_characters.sub('-', directory_name).lower()
 
     @staticmethod
     def get_salt():
@@ -126,10 +126,7 @@ class WPPy:
         os.rename(self.directory_wordpress, self.directory_site)
 
     def create_nginx_config(self):
-        if self.is_sub_directory:
-            print("Wrong method...")
-
-        print("This option is currently unavailable")
+        pass
 
     # create an NGINX include file
     def create_nginx_include(self):
@@ -150,7 +147,7 @@ class WPPy:
 
     # edit the WP config file
     def edit_wp_config(self, config_filename):
-        wp_salt = WPPy.get_salt()
+        wp_salt = Whippy.get_salt()
         wp_salt.splitlines()
 
         wp_fs_direct = "\n\n/** Sets up 'direct' method for WordPress, auto-update without FTP **/\n" \
