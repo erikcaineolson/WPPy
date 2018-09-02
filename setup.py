@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(name='whippy',
-      version='0.8',
+      version='0.8.1',
       description='Rapidly scaffold WordPress sites on Linux NGINX servers from the command line. Unrelated to the wppy'\
                   ' project, although both fill the same hole.',
       url='https://github.com/erikcaineolson/whippy',
