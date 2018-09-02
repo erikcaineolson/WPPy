@@ -1,9 +1,10 @@
 from setuptools import setup, find_packages
 
-setup(name='wppy',
+setup(name='whippy',
       version='1.0',
-      description='Python script for rapidly generating WordPress sites on Linux NGINX servers from the command line',
-      url='https://github.com/erikcaineolson/wppy',
+      description='Python script for rapidly generating WordPress sites on Linux NGINX servers from the command line.'\
+                  'Totally unrelated to the wppy project, although they fill the same hole.',
+      url='https://github.com/erikcaineolson/whippy',
       author='Erik C. Olson',
       author_email='erikcaineolson@gmail.com',
       license='MIT',

@@ -9,7 +9,7 @@ def main(argv):
     try:
         opts, args = getopt.getopt(argv, "d", ["defaults"])
     except getopt.GetoptError:
-        print('wppy [-d|--defaults]')
+        print('whippy [-d|--defaults]')
         sys.exit()
 
     for opt, arg in opts:
