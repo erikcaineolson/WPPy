@@ -1,4 +1,5 @@
-import sys, getopt
+import sys
+import getopt
 from classes.WPPy import WPPy
 
 
