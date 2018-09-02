@@ -33,7 +33,7 @@ class WPPy:
         self.directory_site = ""
         self.directory_wordpress = ""
 
-        self.is_sub_directory = False
+        self.is_sub_directory = True    # TODO: make this false and write the NGINX Config generator
 
         self.site_name = ""
 
@@ -117,9 +117,19 @@ class WPPy:
         self.edit_wp_config(config_filename)
 
         # edit the NGINX config file
+        if self.is_sub_directory:
+            self.create_nginx_include()
+        else:
+            self.create_nginx_config()
 
         # rename the WP directory
         os.rename(self.directory_wordpress, self.directory_site)
+
+    def create_nginx_config(self):
+        if self.is_sub_directory:
+            print("Wrong method...")
+
+        print("This option is currently unavailable")
 
     # create an NGINX include file
     def create_nginx_include(self):
