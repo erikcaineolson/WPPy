@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(name='wppy',
       version='1.0',
@@ -7,5 +7,9 @@ setup(name='wppy',
       author='Erik C. Olson',
       author_email='erikcaineolson@gmail.com',
       license='MIT',
-      packages=['wppy', 'mysql-connector', 'python-dotenv'],
+      packages=['wppy'],
+      install_requires=[
+          'mysql-connector',
+          'python-dotenv',
+      ],
       zip_safe=False)
